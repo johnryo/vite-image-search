@@ -8,9 +8,12 @@ const ThemeToggle = () => {
     <section className='toggle-container'>
       <button className='dark-toggle' onClick={toggleDarkTheme}>
         {isDarkTheme ? (
-          <BsFillSunFill className='toggle-icon' />
+          <BsFillSunFill className='toggle-icon' style={{ color: '#facc15' }} />
         ) : (
-          <BsFillMoonFill className='toggle-icon' />
+          <BsFillMoonFill
+            className='toggle-icon'
+            style={{ color: '#7c3aed' }}
+          />
         )}
       </button>
     </section>

@@ -291,25 +291,25 @@ Toggle Container
 ========
 */
 .toggle-container {
-  width: var(--view-width);
-  max-width: var(--max-width);
-  padding: 1rem 0;
-  margin: 0 auto;
   display: flex;
   justify-content: end;
+  width: var(--view-width);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 0;
 }
 .dark-toggle {
-  background: transparent;
-  border-color: transparent;
-  width: 5rem;
-  height: 2rem;
   display: grid;
   place-items: center;
+  width: 5rem;
+  height: 2rem;
+  background: transparent;
+  border-color: transparent;
   cursor: pointer;
 }
 .toggle-icon {
-  font-size: 1.5rem;
   color: var(--textColor);
+  font-size: 1.5rem;
 }
 
 /* 
@@ -317,26 +317,28 @@ Toggle Container
 Search Form
 ========
 */
-.title {
+/* .title {
   color: var(--primary-500);
+} */
+.title {
+  color: var(--textColor);
 }
 
 .search-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
   width: var(--view-width);
   max-width: var(--fixed-width);
   margin: 0 auto;
   margin-top: 2rem;
-  display: grid;
-  grid-template-columns: 1fr auto;
 }
 .search-input {
-  border-color: var(--grey-300);
-  transition: var(--darkModeTransition);
   color: var(--textColor);
+  border-color: var(--grey-300);
   border-radius: 0;
+  transition: var(--darkModeTransition);
   /* border-right: none; */
 }
-
 .search-form .btn {
   border-radius: 0;
 }
@@ -351,11 +353,11 @@ Gallery
 ========
 */
 .image-container {
+  display: grid;
+  gap: 2rem;
   width: var(--view-width);
   max-width: var(--max-width);
   margin: 3rem auto;
-  display: grid;
-  gap: 2rem;
 }
 .image-container .img {
   height: 10rem;
